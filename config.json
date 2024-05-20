@@ -1,0 +1,14 @@
+{
+    "out_channels" : 3 ,
+    "model_name" : "my_model",
+    "batch_size" : 2 ,
+    "train_path" : "/home/ps40012904/brats_2021/BraTS2021_Validation_Data",
+    "val_path": "/home/ps40012904/brats_2021/BraTS2021_Validation_Data",
+    "Epochs": 10,
+    "l_r" : 1e-4,
+    "weight_decay" : 0,
+    "optimizer" : "adam",
+    "loss" : "Diceloss",
+    "checkpoint": {"is_true":true,"monitor":"val_loss","mode":"min","save_path":"/home/ps40012904/Gulshan/segmentation/checkpoints"},
+    "earlystopping":{"is_true":false,"patience" : 1 ,"min_del" : 0}
+}
